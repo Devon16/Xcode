@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Tutorial.h
 //  MutantWars
 //
 //  Created by Devon on 9/7/13.
@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "AVFoundation/AVFoundation.h"
 
-@interface ViewController : UIViewController{
+
+@interface Tutorial : UIViewController{
     IBOutlet AVAudioPlayer *MenuClick;
 }
 
 @property(nonatomic, retain)AVAudioPlayer *MenuClick;
 
--(IBAction)Tutorial:(id)sender;
--(IBAction)Play:(id)sender;
+-(IBAction)Back:(id)sender;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Tutorial.h"
+#import "Lv1.h"
 
 @interface ViewController ()
 
@@ -14,8 +16,34 @@
 
 @implementation ViewController
 
+@synthesize MenuClick;
+
+-(IBAction)Tutorial:(id)sender{
+    [MenuClick play];
+    Tutorial *MenuToTutorial = [[Tutorial alloc]
+                        initWithNibName:@"Tutorial"
+                        bundle:nil];
+    
+    
+    [self.view addSubview:MenuToTutorial.view];
+}
+
+-(IBAction)Play:(id)sender{
+    [MenuClick play];
+    Lv1 *MenuToLv1 = [[Lv1 alloc]
+                     initWithNibName:@"Lv1"
+                     bundle:nil];
+    
+    [self.view addSubview:MenuToLv1.view];
+}
+
 - (void)viewDidLoad
 {
+    AVAudioPlayer *pp1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"MenuClick" ofType:@"mp3"]] error:nil];
+    self.MenuClick = pp1;
+    [pp1 prepareToPlay];
+    [pp1 release];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
