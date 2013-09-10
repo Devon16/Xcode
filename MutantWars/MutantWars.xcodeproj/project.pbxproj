@@ -19,6 +19,9 @@
 		005F324417DCDB89008A8F4E /* HalfHealth.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F323F17DCDB89008A8F4E /* HalfHealth.png */; };
 		005F324517DCDB89008A8F4E /* QuarterHealth.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F324017DCDB89008A8F4E /* QuarterHealth.png */; };
 		005F324717DD03F5008A8F4E /* Lv1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005F324617DD03F5008A8F4E /* Lv1.xib */; };
+		005F325917DD5F8B008A8F4E /* BoatGun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 005F325817DD5F8B008A8F4E /* BoatGun.mp3 */; };
+		005F326017DD669B008A8F4E /* GoLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F325E17DD669B008A8F4E /* GoLeft.png */; };
+		005F326117DD669B008A8F4E /* GoRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F325F17DD669B008A8F4E /* GoRight.png */; };
 		00E545BE17DBC2F100F5759A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E545BD17DBC2F100F5759A /* UIKit.framework */; };
 		00E545C017DBC2F100F5759A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E545BF17DBC2F100F5759A /* Foundation.framework */; };
 		00E545C217DBC2F100F5759A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E545C117DBC2F100F5759A /* CoreGraphics.framework */; };
@@ -32,10 +35,8 @@
 		00E545DA17DBC2F100F5759A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E545D817DBC2F100F5759A /* ViewController.xib */; };
 		00E545E817DBC3AB00F5759A /* 2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E545E217DBC3AB00F5759A /* 2x.png */; };
 		00E545EA17DBC3AB00F5759A /* Bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E545E417DBC3AB00F5759A /* Bullet.png */; };
-		00E545EB17DBC3AB00F5759A /* crate.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E545E517DBC3AB00F5759A /* crate.png */; };
 		00E545EC17DBC3AB00F5759A /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E545E617DBC3AB00F5759A /* Ship.png */; };
 		00E545ED17DBC3AB00F5759A /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E545E717DBC3AB00F5759A /* water.png */; };
-		00E545F217DBC3D600F5759A /* BoatGun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E545EF17DBC3D600F5759A /* BoatGun.mp3 */; };
 		00E545F317DBC3D600F5759A /* MenuClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E545F017DBC3D600F5759A /* MenuClick.mp3 */; };
 		00E545F417DBC3D600F5759A /* ObjectPickUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00E545F117DBC3D600F5759A /* ObjectPickUp.mp3 */; };
 		00E545F817DBC5E800F5759A /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E545F617DBC5E800F5759A /* Tutorial.m */; };
@@ -56,6 +57,9 @@
 		005F323F17DCDB89008A8F4E /* HalfHealth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HalfHealth.png; sourceTree = "<group>"; };
 		005F324017DCDB89008A8F4E /* QuarterHealth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuarterHealth.png; sourceTree = "<group>"; };
 		005F324617DD03F5008A8F4E /* Lv1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Lv1.xib; path = ../Lv1.xib; sourceTree = "<group>"; };
+		005F325817DD5F8B008A8F4E /* BoatGun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BoatGun.mp3; sourceTree = "<group>"; };
+		005F325E17DD669B008A8F4E /* GoLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoLeft.png; sourceTree = "<group>"; };
+		005F325F17DD669B008A8F4E /* GoRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoRight.png; sourceTree = "<group>"; };
 		00E545BA17DBC2F100F5759A /* MutantWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutantWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E545BD17DBC2F100F5759A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00E545BF17DBC2F100F5759A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,10 +78,8 @@
 		00E545D917DBC2F100F5759A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		00E545E217DBC3AB00F5759A /* 2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2x.png; sourceTree = "<group>"; };
 		00E545E417DBC3AB00F5759A /* Bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet.png; sourceTree = "<group>"; };
-		00E545E517DBC3AB00F5759A /* crate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crate.png; sourceTree = "<group>"; };
 		00E545E617DBC3AB00F5759A /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
 		00E545E717DBC3AB00F5759A /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
-		00E545EF17DBC3D600F5759A /* BoatGun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BoatGun.mp3; sourceTree = "<group>"; };
 		00E545F017DBC3D600F5759A /* MenuClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MenuClick.mp3; sourceTree = "<group>"; };
 		00E545F117DBC3D600F5759A /* ObjectPickUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ObjectPickUp.mp3; sourceTree = "<group>"; };
 		00E545F517DBC5E800F5759A /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Tutorial.h; path = ../Tutorial.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -174,6 +176,8 @@
 		00E545E117DBC3A000F5759A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				005F325E17DD669B008A8F4E /* GoLeft.png */,
+				005F325F17DD669B008A8F4E /* GoRight.png */,
 				005F323C17DCDB89008A8F4E /* 3QuarterHealth.png */,
 				005F323D17DCDB89008A8F4E /* EmptyHealth.png */,
 				005F323E17DCDB89008A8F4E /* FullHealth.png */,
@@ -186,7 +190,6 @@
 				005F322717DCC07B008A8F4E /* PurpleMutant.png */,
 				00E545E217DBC3AB00F5759A /* 2x.png */,
 				00E545E417DBC3AB00F5759A /* Bullet.png */,
-				00E545E517DBC3AB00F5759A /* crate.png */,
 				00E545E617DBC3AB00F5759A /* Ship.png */,
 				00E545E717DBC3AB00F5759A /* water.png */,
 			);
@@ -196,7 +199,7 @@
 		00E545EE17DBC3CA00F5759A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				00E545EF17DBC3D600F5759A /* BoatGun.mp3 */,
+				005F325817DD5F8B008A8F4E /* BoatGun.mp3 */,
 				00E545F017DBC3D600F5759A /* MenuClick.mp3 */,
 				00E545F117DBC3D600F5759A /* ObjectPickUp.mp3 */,
 			);
@@ -271,10 +274,8 @@
 				00E545DA17DBC2F100F5759A /* ViewController.xib in Resources */,
 				00E545E817DBC3AB00F5759A /* 2x.png in Resources */,
 				00E545EA17DBC3AB00F5759A /* Bullet.png in Resources */,
-				00E545EB17DBC3AB00F5759A /* crate.png in Resources */,
 				00E545EC17DBC3AB00F5759A /* Ship.png in Resources */,
 				00E545ED17DBC3AB00F5759A /* water.png in Resources */,
-				00E545F217DBC3D600F5759A /* BoatGun.mp3 in Resources */,
 				00E545F317DBC3D600F5759A /* MenuClick.mp3 in Resources */,
 				00E545F417DBC3D600F5759A /* ObjectPickUp.mp3 in Resources */,
 				00E545F917DBC5E800F5759A /* Tutorial.xib in Resources */,
@@ -289,6 +290,9 @@
 				005F324417DCDB89008A8F4E /* HalfHealth.png in Resources */,
 				005F324517DCDB89008A8F4E /* QuarterHealth.png in Resources */,
 				005F324717DD03F5008A8F4E /* Lv1.xib in Resources */,
+				005F325917DD5F8B008A8F4E /* BoatGun.mp3 in Resources */,
+				005F326017DD669B008A8F4E /* GoLeft.png in Resources */,
+				005F326117DD669B008A8F4E /* GoRight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +390,7 @@
 		00E545DE17DBC2F100F5759A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MutantWars/MutantWars-Prefix.pch";
 				INFOPLIST_FILE = "MutantWars/MutantWars-Info.plist";
@@ -397,6 +402,7 @@
 		00E545DF17DBC2F100F5759A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MutantWars/MutantWars-Prefix.pch";
 				INFOPLIST_FILE = "MutantWars/MutantWars-Info.plist";

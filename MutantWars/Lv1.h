@@ -19,6 +19,8 @@ int MutantStart;
 int ShipMovement;
 int MutantKilled;
 int GameTimer;
+int Points;
+int MutantHit;
 
 BOOL FullHealth;
 BOOL ThreeQuartHealth;
@@ -35,6 +37,8 @@ BOOL EmptyHealth;
     IBOutlet UIButton *Shoot;
     IBOutlet UIButton *Exit;
     IBOutlet UIButton *Start;
+    IBOutlet UIButton *Left;
+    IBOutlet UIButton *Right;
     
     IBOutlet UIImageView *Ship;
     IBOutlet UIImageView *Bullet;
@@ -52,7 +56,7 @@ BOOL EmptyHealth;
     
     IBOutlet UILabel *CountDown;
     
-    
+    IBOutlet UILabel *VicScore;
     IBOutlet UILabel *Score;
     IBOutlet UILabel *ScoreLabel;
     IBOutlet UILabel *WinOrLose;
@@ -61,26 +65,37 @@ BOOL EmptyHealth;
     IBOutlet UIImageView *Radiation2;
     IBOutlet UIImageView *Radiation3;
     
+    NSTimer *LeftTimer;
+    NSTimer *RightTimer;
     NSTimer *MovementTimer;
     NSTimer *Timer;
 }
 
-@property(nonatomic, retain)UIImageView *Mutant1;
-@property(nonatomic, retain)UIImageView *Mutant2;
-@property(nonatomic, retain)UIImageView *Mutant3;
-@property(nonatomic, retain)UIImageView *Mutant4;
-@property(nonatomic, retain)UIImageView *Bullet;
-@property(nonatomic, retain)UIImageView *Ship;
-@property(nonatomic, retain)UIImageView *Radiation1;
-@property(nonatomic, retain)UIImageView *Radiation2;
-@property(nonatomic, retain)UIImageView *Radiation3;
+@property(nonatomic, strong)UIImageView *Mutant1;
+@property(nonatomic, strong)UIImageView *Mutant2;
+@property(nonatomic, strong)UIImageView *Mutant3;
+@property(nonatomic, strong)UIImageView *Mutant4;
+@property(nonatomic, strong)UIImageView *Bullet;
+@property(nonatomic, strong)UIImageView *Ship;
+@property(nonatomic, strong)UIImageView *Radiation1;
+@property(nonatomic, strong)UIImageView *Radiation2;
+@property(nonatomic, strong)UIImageView *Radiation3;
 
-@property(nonatomic, retain)AVAudioPlayer *MenuClick;
-@property(nonatomic, retain)AVAudioPlayer *BoatGun;
+@property(nonatomic, strong)AVAudioPlayer *MenuClick;
+@property(nonatomic, strong)AVAudioPlayer *BoatGun;
 
 -(IBAction)Shoot:(id)sender;
 -(IBAction)Exit:(id)sender;
 -(IBAction)Start:(id)sender;
+
+-(IBAction)Left:(id)sender;
+-(IBAction)StopLeft:(id)sender;
+-(IBAction)Right:(id)sender;
+-(IBAction)StopRight:(id)sender;
+
+-(void)GoLeft;
+-(void)GoRight;
+
 
 -(void)MutantKilled;
 -(void)Movement;
@@ -88,6 +103,8 @@ BOOL EmptyHealth;
 
 -(void)Timer;
 
+
+-(void)Win;
 -(void)GameOver;
 
 

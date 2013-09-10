@@ -40,7 +40,6 @@
     AVAudioPlayer *pp1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"MenuClick" ofType:@"mp3"]] error:nil];
     self.MenuClick = pp1;
     [pp1 prepareToPlay];
-    [pp1 release];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

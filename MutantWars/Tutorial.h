@@ -14,7 +14,7 @@
     IBOutlet AVAudioPlayer *MenuClick;
 }
 
-@property(nonatomic, retain)AVAudioPlayer *MenuClick;
+@property(nonatomic, strong)AVAudioPlayer *MenuClick;
 
 -(IBAction)Back:(id)sender;
 
